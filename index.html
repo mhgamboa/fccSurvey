@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="backgroundoverlay">
+      <h1 id="title">Generic Coding Bootcamp Survey Form</h1>
+      <p id="description">
+        Help us know what we need to teach you!
+      </p>
+
+      <form action="" id="survey-form">
+        <!-- User Name Input -->
+        <label for="name" id="name-label">First/Last Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="First/Last Name"
+          required
+        />
+
+        <!-- User Email Input -->
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        />
+
+        <!-- User Age Input -->
+        <label for="number" id="number-label">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="18"
+          max="110"
+          placeholder="Must be at least 18 years old"
+        />
+
+        <div for="dropdown" class="boldfont">
+          How did you hear about us:
+        </div>
+        <select name="referral" id="dropdown">
+          <option value="">--Please choose an option--</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Google">Google</option>
+          <option value="Friend">Friend Referral</option>
+          <option value="Billboardad">Billboard Ad</option>
+        </select>
+
+        <div class="boldfont">Please choose your gender:</div>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" radio />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="nonbinary" name="gender" value="nonbinary" />
+          <label for="nonbinary">Non-binary</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+
+        <div class="boldfont">
+          Which languages are you most interested in learning?
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            name="technology"
+            id="javascript"
+            value="javascript"
+          />
+          <label for="javascript">Javascript</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="technology" id="java" value="java" />
+          <label for="java">Java</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="technology" id="python" value="python" />
+          <label for="python">Python</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="technology" id="swift" value="swift" />
+          <label for="swift">Swift</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="technology" id="php" value="php" />
+          <label for="php">PHP</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="technology" id="csharp" value="csharp" />
+          <label for="csharp">C#</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            name="technology"
+            id="typescript"
+            value="typescript"
+          />
+          <label for="typescript">Typescript</label>
+        </div>
+
+        <label for="story" class="boldfont"
+          >Do you have any other suggestions or questions?</label
+        >
+        <textarea name="story" id="story" cols="30" rows="10"></textarea>
+
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
